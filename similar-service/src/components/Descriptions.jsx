@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Descriptions = (props) => {
-     console.log(props.info)
+    //  console.log(props.info)
         if (props.info.length < 1) {
           return null;
         }

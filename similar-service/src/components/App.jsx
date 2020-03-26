@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+
 import Details from './Details.jsx';
 import Descriptions from './Descriptions.jsx';
 import Footer from './Footer.jsx';
@@ -10,21 +11,16 @@ import Controller from './Controller.jsx'
 class App extends React.Component {
     constructor(props) {
       super(props);
-      
       this.state = {
         moviePosters: [], 
         descriptions: [],
         id: 284053,
       }
-
     }
     
-
     async componentDidMount() {
-      console.log('mounted');
-
-
-      await Axios.get('http://localhost:3003/api/descriptions', {
+      // console.log('mounted');
+      await Axios.get('/api/descriptions', {
         params:{
         id: `${this.state.id}`
       }
@@ -36,7 +32,6 @@ class App extends React.Component {
       .then(info => {
           this.setState({
               descriptions: info.data.results
-              
           })
       })
       .catch(err => {
@@ -44,7 +39,7 @@ class App extends React.Component {
       });
 
 
-      await Axios.get('http://localhost:3003/api/similars')
+      await Axios.get('/api/similars')
       .then(results => {
         return results
       })

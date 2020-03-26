@@ -1,10 +1,6 @@
 const express = require('express');
 const models = require('../models/movieModels')
 
-
-
-
-
 const getSimilarMovies = (req, res) => {
   models.getSimilarMovies()
   .then(results => {
@@ -23,7 +19,7 @@ const getMovieDetails = (req, res) => {
   const id = req.query.id
   models.getMovieDetails(id)
   .then(results => {
-      console.log(req)
+    //   console.log(req)
       res.status(201).json({ results })
   })
   .catch(err => {
