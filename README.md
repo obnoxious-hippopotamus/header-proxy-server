@@ -5,7 +5,7 @@ Individual proxy server for the header micro service
 
 - Open 3 terminal tabs for each of the service repos
 
-FOR EACH SERVICE:
+- FOR EACH SERVICE:
   - Navigate into the service directory and run the schema.sql file to make the DB.
   - Then run the seed script found on that services package.json
   - execute npm install for each window
