@@ -66,7 +66,7 @@ class Header extends React.Component {
           <DropList onChange={this.handleSelect} titles={this.state.movieTitles} />
         </div>
         <div className="container" >
-          <img className="poster" src={'https://image.tmdb.org/t/p/w500/' + this.state.movieInfo.poster_path} />
+          <img className="headerPoster" src={'https://image.tmdb.org/t/p/w500/' + this.state.movieInfo.poster_path} />
           <Title title={this.state.movieInfo.title} />
           <Rating
             stars={this.state.movieInfo.rating}

@@ -3,7 +3,6 @@
     font-family: ‘Noto Sans JP’, sans-serif;
 }
 
-
 .headerDiv {
     min-height: 100px;
     max-height: 500px;
@@ -106,10 +105,13 @@ body {
     margin: 0px;
   }
   
-  .poster {
+  .headerPoster {
     display: flex;
     float: right;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    width: 30%;
+    padding: 0px 50px;
+    margin: 50px, 0px, 50px, 50px;
   }
   
   .container {
@@ -177,6 +179,7 @@ body {
     color: #fff;
     text-rendering:optimizelegibility;
     -webkit-font-smoothing:antialiased;
+    display: block;
     /* padding-left: 40px; */
   }
   
@@ -186,9 +189,9 @@ body {
   .movieWheel { 
     background-color:#0f171e;
     grid-column: 1/4;
-    padding-left: 40px;
+    /* padding-left: 40px; */
   
-    flex-basis:80%;
+    /* flex-basis:100%; */
     display: flex;
     flex-wrap: wrap;
   
@@ -202,8 +205,10 @@ body {
   }
   
   /*ELEMENT TO RENDER EACH MOVIE POSTER DYNAMICALLY*/
+
   .eachMovie {
-    flex-basis: 10%;
+    flex-basis: 15%;
+    /* width: 140px; */
     margin: 5px;
     overflow-x: hidden;
       overflow-y: hidden;
@@ -223,11 +228,11 @@ body {
   }
   
   .moviePoster {
-    width: auto;
-    /* margin-left: 5px;
-    margin-bottom: 5px; */
-    /* display: flex; */
+    padding: 0px;
+    margin-bottom: 5px;
+      /* display: flex; */
     height: 200px;
+    width: auto;
     /* box-sizing: border-box; */
     border-radius: 3px;
     display: inline-block;
@@ -251,7 +256,6 @@ body {
     color: #fff;
     grid-column: 1/4;
     padding-top: 75px;
-    padding-left: 40px;
     text-rendering:optimizelegibility;
     -webkit-font-smoothing:antialiased;
   } 
@@ -267,6 +271,7 @@ body {
   
   /*INNDER DIV OF PROPERTIES*/
   .detailsProperties {
+      padding: 0px;
     list-style-type: none;
     color:rgb(129, 151, 164);
     font-family:"Amazon Ember Regular", Arial, sans-serif;
@@ -313,7 +318,7 @@ a {
 
 /*DVD BUTTON AND HOVER STYLING*/
 #button1 {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     display: inline-block;
     background-color: #c4cacf;
     border-radius: 5px;
@@ -393,9 +398,9 @@ a {
     right: 0;
 }  
 
-  /* ========== REVIEWS STYLES ============= */
+/* ========== REVIEWS STYLES ============= */
 
-  h2, h3 {
+h2, h3 {
     font-weight: 650;
 }
 
@@ -498,6 +503,8 @@ a {
 
 
 .reviewDivDeets {
-    background-color: #FFFFFF;
+    
+    padding-left: 0px;
+    /* background-color: #FFFFFF; */
     width: 100%;
 }
