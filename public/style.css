@@ -23,7 +23,7 @@ body {
     background-color: #0f171e;
     padding-left: 50px;
   }
-  
+
   h1 {
     color: #FFFFFF;
     font-size: 30px
@@ -31,7 +31,8 @@ body {
   
   
   h2,
-  p {
+  .headerDescription,
+  .subtext {
     color: #FFFFFF;
     font-size: 17px ;
   }
@@ -108,7 +109,6 @@ body {
   .headerPoster {
     display: flex;
     float: right;
-    margin-bottom: 50px;
     width: 30%;
     padding: 0px 50px;
     margin: 50px, 0px, 50px, 50px;
@@ -507,4 +507,8 @@ h2, h3 {
     padding-left: 0px;
     /* background-color: #FFFFFF; */
     width: 100%;
+}
+
+.reviewContent {
+    color: black;
 }
